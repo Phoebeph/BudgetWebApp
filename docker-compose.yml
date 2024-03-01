@@ -1,0 +1,12 @@
+version: "3"
+services:
+  my-react-app:
+    build: ./my-react-app
+    container_name: my-react-app
+    ports:
+      - "3000:3000"
+  server:
+    build: ./server
+    container_name: server
+    ports:
+      - "3003:3003"
